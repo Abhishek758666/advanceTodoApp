@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <main>
+        <!-- ----------left container start---------------- -->
+        <div class="main-left">
+          <div class="profile">
+            <img
+              src="https://i.pinimg.com/564x/14/3d/7e/143d7eb67008725af9edb7429327e77b.jpg"
+              alt=""
+            />
+          </div>
+          <div class="sortTask">
+            <h3>SORT TASK</h3>
+            <div>
+              <span onclick="showDeadline()">DEADLINE</span>
+              <span onclick="showPriority()">PRIORITY</span>
+              <span onclick="showCategory()">CATEGORY</span>
+            </div>
+          </div>
+          <div class="footer">
+            <p>©Copyright 2024:</p>
+            <p>By Abhishek Khati</p>
+          </div>
+        </div>
+        <!-- ----------left container end---------------- -->
+
+        <!-- ----------right container start---------------- -->
+        <div class="main-right">
+          <!-- navbar -->
+          <nav>
+            <div class="nav-left">
+              <div class="day">17</div>
+              <div>
+                <div class="month">MAR</div>
+                <div class="year">2024</div>
+              </div>
+            </div>
+            <div class="nav-right">
+              <div class="week">MONDAY</div>
+              <div class="time">12:30</div>
+            </div>
+          </nav>
+
+          <!-- search Task -->
+          <div class="searchContainer">
+            <form action="" id="searchForm">
+              <input type="text" placeholder="Search Tasks" id="searchTask" />
+              <button type="submit"><i class="ri-search-2-line"></i></button>
+            </form>
+          </div>
+
+          <!-- task headings -->
+          <div class="taskHeadings">
+            <span>Title</span>
+            <span>Category</span>
+            <span>Deadline</span>
+            <span>Priority</span>
+          </div>
+
+          <!-- task lists -->
+          <div class="taskLists">
+            <ul>
+              <li>
+                <div class="li-up">
+                  <div class="title">Task 1</div>
+                  <div class="category">Personal</div>
+                  <div class="deadline">3 days</div>
+                  <div class="priority">High</div>
+                </div>
+                <div class="li-mid">
+                  <div class="desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quis.
+                  </div>
+                </div>
+                <div class="li-down">
+                  <button><i class="ri-file-edit-line"></i></button>
+                  <button><i class="ri-delete-bin-6-line"></i></button>
+                </div>
+              </li>
+              <li>
+                <div class="li-up">
+                  <div class="title">Task 1</div>
+                  <div class="category">Personal</div>
+                  <div class="deadline">3 days</div>
+                  <div class="priority">High</div>
+                </div>
+                <div class="li-mid">
+                  <div class="desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quis.
+                  </div>
+                </div>
+                <div class="li-down">
+                  <button><i class="ri-file-edit-line"></i></button>
+                  <button><i class="ri-delete-bin-6-line"></i></button>
+                </div>
+              </li>
+              <li>
+                <div class="li-up">
+                  <div class="title">Task 1</div>
+                  <div class="category">Personal</div>
+                  <div class="deadline">3 days</div>
+                  <div class="priority">High</div>
+                </div>
+                <div class="li-mid">
+                  <div class="desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quis.
+                  </div>
+                </div>
+                <div class="li-down">
+                  <button><i class="ri-file-edit-line"></i></button>
+                  <button><i class="ri-delete-bin-6-line"></i></button>
+                </div>
+              </li>
+              <li>
+                <div class="li-up">
+                  <div class="title">Task 1</div>
+                  <div class="category">Personal</div>
+                  <div class="deadline">3 days</div>
+                  <div class="priority">High</div>
+                </div>
+                <div class="li-mid">
+                  <div class="desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quis.
+                  </div>
+                </div>
+                <div class="li-down">
+                  <button><i class="ri-file-edit-line"></i></button>
+                  <button><i class="ri-delete-bin-6-line"></i></button>
+                </div>
+              </li>
+              <li>
+                <div class="li-up">
+                  <div class="title">Task 1</div>
+                  <div class="category">Personal</div>
+                  <div class="deadline">3 days</div>
+                  <div class="priority">High</div>
+                </div>
+                <div class="li-mid">
+                  <div class="desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quis.
+                  </div>
+                </div>
+                <div class="li-down">
+                  <button><i class="ri-file-edit-line"></i></button>
+                  <button><i class="ri-delete-bin-6-line"></i></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- create Task Btn -->
+          <button class="createTask-btn">+</button>
+
+          <!--  task form -->
+          <div class="createTask-form">
+            <form id="taskForm" action="">
+              <input type="text" placeholder="Enter Title" id="title" />
+              <textarea
+                name="desc"
+                id="desc"
+                placeholder="Enter Description"
+              ></textarea>
+              <select name="category" id="category">
+                <option value="personal">personal</option>
+                <option value="work">work</option>
+                <option value="school">school</option>
+              </select>
+              <select name="priority" id="priority">
+                <option value="low">low</option>
+                <option value="medium">medium</option>
+                <option value="high">high</option>
+              </select>
+              <input
+                id="deadline"
+                type="text"
+                placeholder="Enter Deadline(1 - 100 days)"
+              />
+              <button type="submit" id="add-task">ADD TASK</button>
+            </form>
+            <button id="closeForm">X</button>
+          </div>
+        </div>
+        <!-- ----------right container end---------------- -->
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
